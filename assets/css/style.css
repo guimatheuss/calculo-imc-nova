@@ -4,7 +4,7 @@
     --primary-color: #105004; /* Verde */
     --primary-color-darker: #3c6926; /* Tom mais escuro de verde */
     --placeholder-color: #6c6c6c; /* Cor para o placeholder */
-    --background-image: url(https://img.freepik.com/fotos-gratis/frutas-e-legumes-verdes-planas-leigas_23-2149270984.jpg?w=1380&t=st=1705738775~exp=1705739375~hmac=bb3772139d8c8fd9d0106efdac02ab1f158002d676ea5199cfd7e3dbb9f336e8);
+    --background-image: url(https://images.unsplash.com/photo-1535914254981-b5012eebbd15?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     --container-background: rgba(240, 248, 255, 0.8); /* Cor mais clara e transparente para o fundo do container */
 }
 
