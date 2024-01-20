@@ -18,7 +18,7 @@ body {
     padding: 0;
     background-image: var(--background-image);
     background-attachment: fixed;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif, serif;
     font-size: 1.3em;
     line-height: 1.5em;
     background-repeat: no-repeat;
