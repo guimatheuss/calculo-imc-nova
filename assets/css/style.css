@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #105004; /* Verde */
+    --primary-color-darker: #3c6926; /* Tom mais escuro de verde */
+    --placeholder-color: #6c6c6c; /* Cor para o placeholder */
+    --background-image: url(https://img.freepik.com/fotos-gratis/frutas-e-legumes-verdes-planas-leigas_23-2149270984.jpg?w=1380&t=st=1705738775~exp=1705739375~hmac=bb3772139d8c8fd9d0106efdac02ab1f158002d676ea5199cfd7e3dbb9f336e8);
+    --container-background: rgba(240, 248, 255, 0.8); /* Cor mais clara e transparente para o fundo do container */
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: var(--background-image);
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-behavior: smooth;
+    color: var(--primary-color); /* Cor do texto geral */
+    animation: backgroundAnimation 20s infinite linear; /* Adiciona animação ao background */
+}
+
+
+
+
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+.container {
+    max-width: 640px;
+    margin: 50px auto;
+    background: var(--container-background);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInAnimation 2s ease; /* Adiciona animação de fade-in */
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+form input,
+form label,
+form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+    color: var(--primary-color); /* Cor do texto dos elementos do formulário */
+}
+
+form input {
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+    border: 1px solid var(--primary-color);
+    background-color: #fff;
+    border-radius: 5px;
+    ::placeholder {
+        color: var(--placeholder-color); /* Cor do placeholder */
+    }
+}
+
+form input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(224, 126, 162, 0.7);
+}
+
+form button {
+    border: none;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background: var(--primary-color-darker);
+}
+
+.paragrafo-resultado {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif; /* Fonte mais legível para os parágrafos */
+}
+
+.bad {
+    background: #f60101;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+h1, h2 {
+    color: var(--primary-color-darker); /* Cor mais escura para os títulos h1 e h2 */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Índice animado */
+#indice {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+#indice:hover {
+    background-color: var(--primary-color-darker);
+}
+
+/* Estilos para dispositivos móveis */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 1em; /* Ajuste o tamanho da fonte para dispositivos móveis conforme necessário */
+    }
+
+    .container {
+        max-width: 100%; /* Utiliza a largura total da tela para dispositivos móveis */
+    }
+
+    form input,
+    form label,
+    form button {
+        font-size: 18px; /* Ajuste o tamanho da fonte dos elementos do formulário para dispositivos móveis conforme necessário */
+    }
+
+    form button {
+        margin-top: 20px; /* Ajuste a margem superior do botão para dispositivos móveis conforme necessário */
+    }
+}
